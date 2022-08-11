@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+<body class="mt-5">
+
+    <h3 class="text-center fw-bold invoice">Invoice Maker</h3>
+    <div class="container mt-5 form-container">
+        <form class="row d-flex g-2 inputContainer form-container border border-2  p-3">
+            <div class="col">
+                <label for="fruits" class="form-label">Select your product</label>
+                <select name="fruits" id="fruits" class="form-select product">      
+                </select>
+            </div>
+            <div class="col">
+                <label for="quantity" class="form-label">Enter quantity</label>
+                <input type="number" class="form-control quantity text-end" required>
+            </div>
+            <div class="col d-flex align-items-center justify-content-center">
+                <button type="submit" class="btn btn-primary btn-lg h-100 w-100">Enter</button>
+            </div>
+        </form>
+
+    </div>
+    <div class="container">
+
+        <table class="table mt-4">
+            <thead>
+                <th>Product's Name</th>
+                <th class="text-end">Quantity</th>
+                <th class="text-end">Price</th>
+                <th class="text-end">Cost</th>
+                <th class="text-end">Action</th>
+            </thead>
+            <tbody class="tableData"></tbody>
+            <tfoot class="tableFoot">
+            </tfoot>
+            
+        </table>
+        <button class="btn btn-primary printTag" onclick="print()"><i class=" bi bi-printer"></i>Print</button> 
+    </div>
+
+
+
+
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/product.js"></script>
+    <script src="../js/app.js"></script>
+   
+</body>
+</html>

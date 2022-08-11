@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+$font-family-sans-serif: 'Montserrat', sans-serif;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+
+@media print{
+    .invoice,.printTag,.form-Contianer{
+        display: none; 
+    } 
+}
+
+
+
+
+
+
+
+
